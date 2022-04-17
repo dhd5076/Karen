@@ -1,9 +1,12 @@
 version: "3.9"
 services:
-  karen:
-      build: .
-      command: npm start
-      ports: 
-          - "80:80"
-      volumes:
-          - .:/usr/app
+  backend:
+    build: 
+        context: ./backend
+        dockerfile: Dockerfile
+    container_name: "backend"
+    command: npm start
+    ports: 
+        - "801:801"
+    volumes:
+        - .:/usr/src/app

@@ -3,7 +3,7 @@
 const express = require('express');
 
 // Constants
-const PORT = 80;
+const PORT = 801;
 
 // App
 const app = express();
@@ -12,4 +12,4 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT);
-console.log(`Running on http://dylandunn.me:${PORT}`);
+console.log(`Runing on port: ${PORT}}`);
